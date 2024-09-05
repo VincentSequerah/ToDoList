@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(240, 119, 33);
+    color: aliceblue;
+}
+
+header {
+    padding: 2rem 1rem;
+}

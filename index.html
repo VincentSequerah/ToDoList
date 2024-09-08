@@ -3,31 +3,34 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>To do list</title>
+	<title>To do</title>
 	<link rel="stylesheet" href="main.css" />
     <link rel="icon" type="image/x-icon" href="Favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
 </head>
 <body>
 	
 	<header>
-		<h1>To do list</h1>
+		<h1>To do</h1>
 		<form id="new-task-form">
-			<input 
+			<input      
 				type="text" 
 				name="new-task-input" 
 				id="new-task-input" 
-				placeholder="Enter new task" />
+				placeholder="Enter new task" />   <!--User inputs task-->
 			<input 
 				type="submit"
 				id="new-task-submit" 
-				value="Add task" />
+				value="Add task" /> <!--User submits task-->
 		</form>
 	</header>
 	<main>
 		<section class="task-list">
 			<h2>Tasks</h2>
 
-			<div id="tasks">
+			<div id="tasks">  <!--Submitted tasks added here-->
 
 
 			</div>

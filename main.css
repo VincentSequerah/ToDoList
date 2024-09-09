@@ -4,10 +4,6 @@
     --red:rgb(220, 20, 60);
     --black:rgb(0,0,0);
 
-
-
-
-
 }
 
 * {
@@ -37,14 +33,10 @@ header h1{
 	font-size: 5rem;
 }
 
-#new-task-form {
-	display: flex;;
-}
+
 
 input, button {
-
 	border: none;
-
 	
 }
 #new-task-input::placeholder {
@@ -55,10 +47,12 @@ input, button {
 #new-task-input {
 	flex: 1 1 0%;
 	background-color: var(--white);
-	padding: 1rem;
+	padding: 0;
 	border-radius: 1rem;
-	margin-right: 1rem;
+	margin: 1rem;
 	font-size: 1.25rem;
+    line-height: 12vh;
+    text-indent: 10px;
 }
 
 
@@ -68,7 +62,7 @@ input, button {
 	cursor: pointer;
     border-radius: 1rem;
     animation: wiggle 3s linear infinite;
-    
+    line-height: 12vh;
 }
 
 @keyframes wiggle {
@@ -113,7 +107,7 @@ input, button {
     }
 
     .task-list {
-        padding: 1rem;
+        padding: 0;
     }
     
     .task-list h2 {
@@ -142,11 +136,11 @@ input, button {
         color: var(--black);
         font-size: 1.125rem;
         width: 100%;
-        display: block;
         border-radius: 1rem 0 0 1rem;
         text-indent: 10px;
         line-height: 9vh;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Geneva, Verdana, sans-serif, sans-serif
+        overflow: clip;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
     }
     
     .task .content .text:not(:read-only) {

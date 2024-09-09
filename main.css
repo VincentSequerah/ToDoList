@@ -1,10 +1,9 @@
 :root {
 	--orange:#F80;
     --white:#FFFFFF;
-    --darkorange:rgb(200, 110, 6);
+    --red:rgb(220, 20, 60);
     --black:rgb(0,0,0);
-    --pink:(var(pink));
-    --green:(blue);
+
 
 
 
@@ -29,14 +28,13 @@ body{
 }
 
 header {
-    padding: 1rem 1rem;   
+    padding: 2vw 10vw;   
     margin: 0 auto;
     text-align: center;
 }    
  
 header h1{ 
 	font-size: 5rem;
-    margin-bottom: 1rem;
 }
 
 #new-task-form {
@@ -105,16 +103,22 @@ input, button {
 
 
     .task .actions .delete {
-        color: crimson;
+        color: var(--red);
+        border-radius: 1rem;
+    }
+
+    button.edit{
+        border-radius:0 1rem 1rem 0;
+
     }
 
     .task-list {
-        padding: .5rem;
+        padding: 1rem;
     }
     
     .task-list h2 {
         font-size: 1.5rem;
-        font-weight: 300;
+        font-weight: 100;
         color: var(--white);
         margin-bottom: .5rem;
         text-align: center;
@@ -124,9 +128,10 @@ input, button {
         display: flex;
         justify-content: space-between;
         background-color: var(--orange);
-        padding: 0rem;
+        padding: 0 10vw;
         border-radius: 1rem;
         margin-bottom: 1rem;
+        flex-wrap: wrap;
     }
     
     .task .content {
@@ -138,6 +143,10 @@ input, button {
         font-size: 1.125rem;
         width: 100%;
         display: block;
+        border-radius: 1rem 0 0 1rem;
+        text-indent: 10px;
+        line-height: 9vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Geneva, Verdana, sans-serif, sans-serif
     }
     
     .task .content .text:not(:read-only) {
@@ -156,6 +165,7 @@ input, button {
         font-weight: 700;
         text-transform: uppercase;
         transition: 0.4s;
+        
     }
     
 

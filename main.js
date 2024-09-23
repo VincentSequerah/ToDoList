@@ -9,12 +9,14 @@ window.addEventListener('load', () => {
 		const task = input.value;
 
         if (!task){
-            alert ('No text entered');
+            alert ('No task entered');
             return;
         }   //check to see if any text entered when submitted//
 
 		const task_el = document.createElement('div');
 		task_el.classList.add('task');    //create div for new task//
+
+
 
 		const task_content_el = document.createElement('div');
 		task_content_el.classList.add('content');   //create div for user input//
@@ -26,6 +28,8 @@ window.addEventListener('load', () => {
 		task_input_el.type = 'text';
 		task_input_el.value = task;
 		task_input_el.setAttribute('readonly', 'readonly');
+
+		task_input_el.name='task';
 
 		task_content_el.appendChild(task_input_el);
 
